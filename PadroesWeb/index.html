@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+    
+
+<body>
+  
+
+    <center>
+        <h1>JavaScript Média</h1>
+    </center>
+
+    
+
+    
+
+
+
+    <script>
+
+        var nota1 = parseFloat(prompt('Digite a primeira nota :'))
+        var nota2 = parseFloat(prompt('Digite segunda nota :'))
+
+
+        function calcularMedia(nota1, nota2,) {
+            var media = parseFloat(nota1 + nota2) / 2
+            return media
+
+
+        }
+        function situação(media) {
+            if (media >= 6) {
+
+
+                document.write('SITUAÇÃO: APROVADO!| ')
+                return situação
+            }
+            else if (media < 6) {
+
+                document.write('SITUAÇÃO: REPROVADO!| ')
+                return situação
+
+
+            }
+
+        }
+
+
+        var media = calcularMedia(nota1, nota2)
+        var situação = situação(media)
+    
+        document.write('A média do aluno é: ' + Math.round(media))
+        
+
+    </script>
+
+
+
+</body>
+
+</html>
